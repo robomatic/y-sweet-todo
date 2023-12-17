@@ -26,7 +26,7 @@ type YDocOptions = {
  *
  * @returns The Y.Doc instance.
  */
-export function useYDoc(options: YDocOptions = { hideDebuggerLink: false }): Y.Doc {
+export function useYDoc(options: YDocOptions = { hideDebuggerLink: true }): Y.Doc {
   const yjsCtx = useContext(YjsContext)
 
   useEffect(() => {
